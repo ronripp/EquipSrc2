@@ -1,0 +1,509 @@
+<VisualMicro>
+  <Program Name="EquipSrc" Ext=".ino" Location="C:\Users\ron\source\repos\EquipSrc">
+    <Compile ReCompileIfSourceIsNewer="1" IsDebugStart="1" IsGdb="0" CompilerErrors="0" ConfigurationName="Debug" UseConfigurationNameInBuildFolder="True" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\ron\AppData\Local\Temp\VMBuilds\EquipSrc\yun\Debug" ExportWebDebugger="0" SketchName="EquipSrc" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DBT_HARDWARESERIAL 0;VM_DBT_SOFTWARESERIAL 1;VM_DBT_FASTSERIAL 2;VM_DBT_USB 3;VM_DBT_TEENSY 4;VM_DBT_UART 5;VM_DBT_USART 6;VM_DBT_USBSERIAL 7;VM_DBT_TTYUART 8;VM_DBT_NET_CONSOLE 9;VM_DBT_Uart 10;VM_DBT_COSA 11;VM_DBT_CDCSerialClass 12;VM_DBT_HARDWARESERIAL1 13;VM_DBT_HARDWARESERIAL2 14;VM_DBT_HARDWARESERIAL3 15;VM_DBT_NET_UDP 16;VM_DBT_USBAPI 17;VM_DBT_SERIALUSB 18;VM_DBT_MS430_SERIAL_ 19;VM_DBT_NO_SERIAL 20;VM_DBT_GENERIC_OBJECT 21;VM_DEBUG_ENABLE 1;VM_DEBUG;VM_DEBUG_BANDWIDTH_THROTTLE_MS 50;VM_DEBUGGER_SOFT_TRANSPORT Serial;VM_DEBUGGER_SOFT_TRANSPORT_WRITER Serial;VM_DBT VM_DBT_GENERIC_OBJECT;VM_DEBUG_BREAKPAUSE;" IncludesDebug="1" IsCompiled="1" />
+    <Platform Name="arduino16x" Package="arduino" Platform="avr" Architecture="avr">
+      <Board CoreFolder="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" VariantFullPath="C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\yun" McuIdePath="C:\Program Files (x86)\Arduino" McuSketchBookPath="C:\Users\ron\OneDrive\Documents\Arduino" name="Arduino Yún" upload.via_ssh="true" vid.0="0x2341" pid.0="0x0041" vid.1="0x2341" pid.1="0x8041" vid.2="0x2A03" pid.2="0x0041" vid.3="0x2A03" pid.3="0x8041" upload.tool="avrdude" upload.protocol="avr109" upload.maximum_size="28672" upload.maximum_data_size="2560" upload.speed="57600" upload.disable_flushing="true" upload.use_1200bps_touch="true" upload.wait_for_upload_port="true" bootloader.tool="avrdude" bootloader.low_fuses="0xff" bootloader.high_fuses="0xd8" bootloader.extended_fuses="0xfb" bootloader.file="caterina/Caterina-Yun.hex" bootloader.noblink="caterina/Caterina-Yun-noblink.hex" bootloader.unlock_bits="0x3F" bootloader.lock_bits="0x2F" build.mcu="atmega32u4" build.f_cpu="16000000L" build.vid="0x2341" build.pid="0x8041" build.usb_product="&quot;Arduino Yun&quot;" build.board="AVR_YUN" build.core="arduino" build.variant="yun" build.extra_flags="{build.usb_flags}" runtime.ide.path="C:\Program Files (x86)\Arduino" runtime.os="windows" build.system.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr\system" runtime.ide.version="108013" target_package="arduino" target_platform="avr" runtime.hardware.path="C:\Program Files (x86)\Arduino\hardware\arduino" originalid="yun" intellisense.tools.path="{runtime.tools.avr-gcc.path}\" intellisense.include.paths="{intellisense.tools.path}\lib\gcc\avr\7.3.0\include;{intellisense.tools.path}avr\include;{intellisense.tools.path}\lib\gcc\avr\7.3.0\include;{intellisense.tools.path}avr\include-fixed;{intellisense.tools.path}avr\include\avr;{intellisense.tools.path}lib\gcc\avr\4.8.1\include;{intellisense.tools.path}lib\gcc\avr\4.9.2\include;{intellisense.tools.path}lib\gcc\avr\4.9.3\include;{vm.intellisense.add-paths}" tools.atprogram.cmd.path="%AVRSTUDIO_EXE_PATH%\atbackend\atprogram" tools.atprogram.cmd.setwinpath="true" tools.atprogram.program.params.verbose="-v" tools.atprogram.program.params.quiet="-q" tools.atprogram.program.pattern="&quot;{cmd.path}&quot; -d {build.mcu} {program.verbose} {program.extra_params} program -c -f &quot;{build.path}\{build.project_name}.hex&quot;" tools.atprogram.program.xpattern="&quot;{cmd.path}&quot; {AVRSTUDIO_BACKEND_CONNECTION} -d {build.mcu} {program.verbose} {program.extra_params} program -c -f &quot;{build.path}\{build.project_name}.hex&quot;" tools.atprogram.erase.params.verbose="-v" tools.atprogram.erase.params.quiet="-q" tools.atprogram.bootloader.params.verbose="-v" tools.atprogram.bootloader.params.quiet="-q" tools.atprogram.bootloader.pattern="&quot;{cmd.path}&quot; -d {build.mcu} {bootloader.verbose}  program -c -f &quot;{runtime.ide.path}\hardware\arduino\avr\bootloaders\{bootloader.file}&quot;" ide.compiler_flags_no_opt="-Og" tools.gdbstub.cmd="avr-gdb.exe" tools.gdbstub.path="{runtime.tools.avr-gcc.path}/bin" tools.gdbstub.alternative.path="Micro Platforms/visualmicro/tools/avr-gdb/7.3.0-atmel3.6.1-arduino5" tools.gdbstub.debug.args="&quot;{{{build.path}/{build.project_name}.elf}}&quot; -ex &quot;target remote \\.\{serial.debug.port}&quot;" tools.gdbstub.showLocalSerialPort="true" debug_menu.hwdebugger.gdbstub="GDB Stub" debug_menu.hwdebugger.gdbstub.debug.tool="gdbstub" meta_gdbstub.sentence="This debugger requires the avr-debugger library (by Jan Dolinay) be included in the project (install via Library Manager or from GitHub)." meta_gdbstub.comment="To use this debugger, install 'avr-debugger' library, add 1) '#include &lt;avr8-stub.h&gt;'  2) add 'debug_init();' to the 'setup()', and add 'breakpoint();' to the top of 'loop()'. Set vMicro &gt; Debugger &gt; 'Compiler Optimization' to 'No Project', 'No Project + Libraries' or 'None' when debugging (NOTE: This might cause compilation errors with certain code such as HardwareSerial.)" meta_gdbstub.image.connect="https://www.visualmicro.com/pics/Debug-Help-Uno_USBOnly.png" meta_gdbstub.image.operation="https://www.visualmicro.com/pics/Debug-Break-Uno-GDBStub-VSOnly.png" meta_gdbstub.reference.usage.url="https://www.visualmicro.com/page/User-Guide.aspx?doc=Arduino-gdb-Tutorial.html" version="1.8.3" compiler.warning_flags="-w" compiler.warning_flags.none="-w" compiler.warning_flags.default="" compiler.warning_flags.more="-Wall" compiler.warning_flags.all="-Wall -Wextra" compiler.path="{runtime.tools.avr-gcc.path}/bin/" compiler.c.cmd="avr-gcc" compiler.c.flags="-c -g -Os {compiler.warning_flags} -std=gnu11 -ffunction-sections -fdata-sections -MMD -flto -fno-fat-lto-objects" compiler.c.elf.flags="{compiler.warning_flags} -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections" compiler.c.elf.cmd="avr-gcc" compiler.S.flags="-c -g -x assembler-with-cpp -flto -MMD" compiler.cpp.cmd="avr-g++" compiler.cpp.flags="-c -g -Os {compiler.warning_flags} -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto" compiler.ar.cmd="avr-gcc-ar" compiler.ar.flags="rcs" compiler.objcopy.cmd="avr-objcopy" compiler.objcopy.eep.flags="-O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0" compiler.elf2hex.flags="-O ihex -R .eeprom" compiler.elf2hex.cmd="avr-objcopy" compiler.ldflags="" compiler.libraries.ldflags="" compiler.size.cmd="avr-size" compiler.c.extra_flags="" compiler.c.elf.extra_flags="" compiler.S.extra_flags="" compiler.cpp.extra_flags="" compiler.ar.extra_flags="" compiler.objcopy.eep.extra_flags="" compiler.elf2hex.extra_flags="" recipe.c.o.pattern="&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.c.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.cpp.o.pattern="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.S.o.pattern="&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.S.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.S.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" archive_file_path="{build.path}/{archive_file}" recipe.ar.pattern="&quot;{compiler.path}{compiler.ar.cmd}&quot; {compiler.ar.flags} {compiler.ar.extra_flags} &quot;{archive_file_path}&quot; &quot;{object_file}&quot;" recipe.c.combine.pattern="&quot;{compiler.path}{compiler.c.elf.cmd}&quot; {compiler.c.elf.flags} -mmcu={build.mcu} {compiler.c.elf.extra_flags} {compiler.ldflags} -o &quot;{build.path}/{build.project_name}.elf&quot; {object_files} {compiler.libraries.ldflags} &quot;{build.path}/{archive_file}&quot; &quot;-L{build.path}&quot; -lm" recipe.objcopy.eep.pattern="&quot;{compiler.path}{compiler.objcopy.cmd}&quot; {compiler.objcopy.eep.flags} {compiler.objcopy.eep.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.eep&quot;" recipe.objcopy.hex.pattern="&quot;{compiler.path}{compiler.elf2hex.cmd}&quot; {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.hex&quot;" recipe.output.tmp_file="{build.project_name}.hex" recipe.output.save_file="{build.project_name}.{build.variant}.hex" recipe.size.pattern="&quot;{compiler.path}{compiler.size.cmd}&quot; -A &quot;{build.path}/{build.project_name}.elf&quot;" recipe.size.regex="^(?:\.text|\.data|\.bootloader)\s+([0-9]+).*" recipe.size.regex.data="^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*" recipe.size.regex.eeprom="^(?:\.eeprom)\s+([0-9]+).*" preproc.includes.flags="-w -x c++ -M -MG -MP" recipe.preproc.includes="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} {preproc.includes.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot;" preproc.macros.flags="-w -x c++ -E -CC" recipe.preproc.macros="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{preprocessed_file_path}&quot;" tools.avrdude.path="{runtime.tools.avrdude.path}" tools.avrdude.cmd.path="{path}/bin/avrdude" tools.avrdude.config.path="{path}/etc/avrdude.conf" tools.avrdude.network_cmd="{runtime.tools.arduinoOTA.path}/bin/arduinoOTA" tools.avrdude.upload.params.verbose="-v" tools.avrdude.upload.params.quiet="-q -q" tools.avrdude.upload.verify="" tools.avrdude.upload.params.noverify="-V" tools.avrdude.upload.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {upload.verbose} {upload.verify} -p{build.mcu} -c{upload.protocol} &quot;-P{serial.port}&quot; -b{upload.speed} -D &quot;-Uflash:w:{build.path}/{build.project_name}.hex:i&quot;" tools.avrdude.program.params.verbose="-v" tools.avrdude.program.params.quiet="-q -q" tools.avrdude.program.verify="" tools.avrdude.program.params.noverify="-V" tools.avrdude.program.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {program.verbose} {program.verify} -p{build.mcu} -c{protocol} {program.extra_params} &quot;-Uflash:w:{build.path}/{build.project_name}.hex:i&quot;" tools.avrdude.erase.params.verbose="-v" tools.avrdude.erase.params.quiet="-q -q" tools.avrdude.erase.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {erase.verbose} -p{build.mcu} -c{protocol} {program.extra_params} -e -Ulock:w:{bootloader.unlock_bits}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m -Ulfuse:w:{bootloader.low_fuses}:m" tools.avrdude.bootloader.params.verbose="-v" tools.avrdude.bootloader.params.quiet="-q -q" tools.avrdude.bootloader.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {bootloader.verbose} -p{build.mcu} -c{protocol} {program.extra_params} &quot;-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i&quot; -Ulock:w:{bootloader.lock_bits}:m" tools.avrdude_remote.upload.pattern="/usr/bin/run-avrdude /tmp/sketch.hex {upload.verbose} -p{build.mcu}" tools.avrdude.upload.network_pattern="&quot;{network_cmd}&quot; -address {serial.port} -port {upload.network.port} -sketch &quot;{build.path}/{build.project_name}.hex&quot; -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}" build.usb_manufacturer="&quot;Unknown&quot;" build.usb_flags="-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'" upload.verify="" tools.vmopenocd.cmd="bin/openocd.exe" tools.vmopenocd.cmd.windows="bin/openocd.exe" tools.vmopenocd.debug.params.verbose="-d2" tools.vmopenocd.debug.params.quiet="-d0" tools.vmopenocd.debug.address="localhost:3333" tools.vmopenocd.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.vmopenocd.scriptPath="-s &quot;{path}/scripts/&quot;" tools.vmopenocd.logging="-l &quot;{{build.path}/{build.project_name}_DebugOpenOCD.log}&quot;" tools.vmopenocd.boardCmd="" tools.vmopenocd.targetCmd="" tools.vmopenocd.initCmd="" tools.vmopenocd.debug.pattern="&quot;{path}/{cmd}&quot; {debug.verbose} {logging} {scriptPath} {boardCmd} {targetCmd} {initCmd}" tools.vmopenocd.program.cmd="bin/openocd.exe" tools.vmopenocd.program.cmd.windows="bin/openocd.exe" tools.vmopenocd.program.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.vmopenocd.program.address="localhost:3333" tools.vmopenocd.program.params.verbose="-d2" tools.vmopenocd.program.params.quiet="-d0" tools.vmopenocd.program.elf.message="****[vMicro]**** Uploading ELF :" tools.vmopenocd.program.pattern="&quot;{path}/{cmd}&quot; {program.verbose} {scriptPath} {boardCmd} {targetCmd} -c &quot;echo -n {{program.elf.message}}&quot; {programCmd}" tools.atmelICE.protocol="" tools.atmelICE.debug.cmd="arm-none-eabi-gdb.exe" tools.atmelICE.debug.path="{runtime.tools.arm-none-eabi-gcc.path}/bin" tools.atmelICE.debug.pattern="&quot;{path}/{cmd}&quot;" tools.atmelICE.server.initCmd="-c &quot;init; reset halt&quot;" vs-cmd.Debug.AttachtoProcess.tools.atmelICE.server.initCmd="-c &quot;init&quot;" tools.atmelICE.server.boardCmd="-c &quot;adapter driver cmsis-dap&quot; -c &quot;cmsis_dap_vid_pid 0x03eb 0x2141&quot;" tools.atmelICE.server.tool="vmopenocd" tools.atmelICE.program.scriptPath="-s &quot;{program.path}/scripts/&quot;" tools.atmelICE.program.boardCmd="-c &quot;adapter driver cmsis-dap&quot; -c &quot;cmsis_dap_vid_pid 0x03eb 0x2141&quot;" tools.atmelICE.program.cmd="bin/openocd.exe" tools.atmelICE.program.cmd.windows="bin/openocd.exe" tools.atmelICE.program.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.atmelICE.program.address="localhost:3333" tools.atmelICE.program.params.verbose="-d2" tools.atmelICE.program.params.quiet="-d0" tools.atmelICE.program.elf.message="****[vMicro]**** Uploading ELF :" tools.atmelICE.program.pattern="&quot;{program.path}/{program.cmd}&quot; {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c &quot;echo -n {{program.elf.message}}&quot; {program.programCmd}" tools.atmelICE.program.extra_params="" tools.atmelICE.program.protocol="" tools.atmelICE.erase.params.verbose="-d3" tools.atmelICE.erase.params.quiet="-d0" tools.atmelICE.erase.pattern="" tools.jlink.cmd="arm-none-eabi-gdb.exe" tools.jlink.path="{runtime.tools.arm-none-eabi-gcc.path}/bin" tools.jlink.pattern="&quot;{path}/{cmd}&quot;" tools.jlink.server.tool="vmopenocd" tools.jlink.server.boardCmd="-f &quot;interface/jlink.cfg&quot;" tools.jlink.server.initCmd="-c &quot;init; reset halt&quot;" vs-cmd.Debug.AttachtoProcess.tools.jlink.server.initCmd="-c &quot;init&quot;" tools.jlink.program.scriptPath="-s &quot;{program.path}/scripts/&quot;" tools.jlink.program.boardCmd="-f &quot;interface/jlink.cfg&quot;" tools.jlink.program.cmd="bin/openocd.exe" tools.jlink.program.cmd.windows="bin/openocd.exe" tools.jlink.program.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.jlink.program.address="localhost:3333" tools.jlink.program.params.verbose="-d2" tools.jlink.program.params.quiet="-d0" tools.jlink.program.elf.message="****[vMicro]**** Uploading ELF :" tools.jlink.program.pattern="&quot;{program.path}/{program.cmd}&quot; {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c &quot;echo -n {{program.elf.message}}&quot; {program.programCmd}" tools.jlink.upload.scriptPath="-s &quot;{upload.path}/scripts/&quot;" tools.jlink.upload.boardCmd="-f &quot;interface/jlink.cfg&quot;" tools.jlink.upload.cmd="bin/openocd.exe" tools.jlink.upload.cmd.windows="bin/openocd.exe" tools.jlink.upload.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.jlink.upload.address="localhost:3333" tools.jlink.upload.params.verbose="-d2" tools.jlink.upload.params.quiet="-d0" tools.jlink.upload.elf.message="****[vMicro]**** Uploading ELF :" tools.jlink.upload.pattern="&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}" tools.bmp_upload.cmd="arm-none-eabi-gdb.exe" tools.bmp_upload.debug.path="{runtime.tools.arm-none-eabi-gcc.path}/bin/" tools.bmp_upload.program.cmd="bin/arm-none-eabi-gdb.exe" tools.bmp_upload.program.cmd.windows="bin/arm-none-eabi-gdb.exe" tools.bmp_upload.program.path="{runtime.tools.arm-none-eabi-gcc.path}" tools.bmp_upload.upload.cmd="bin/arm-none-eabi-gdb.exe" tools.bmp_upload.upload.cmd.windows="bin/arm-none-eabi-gdb.exe" tools.bmp_upload.upload.path="{runtime.tools.arm-none-eabi-gcc.path}" tools.bmp_upload.server.initCmd="-c &quot;init; reset halt&quot;" vs-cmd.Debug.AttachtoProcess.tools.bmp_upload.server.initCmd="-c &quot;init&quot;" tools.bmp_upload.showLocalSerialPort="true" tools.stlinkv2.description="" tools.stlinkv2.cmd="arm-none-eabi-gdb.exe" tools.stlinkv2.path="{runtime.tools.arm-none-eabi-gcc.path}/bin" tools.stlinkv2.pattern="&quot;{path}/{cmd}&quot;" tools.stlinkv2.server.tool="vmopenocd" tools.stlinkv2.server.boardCmd="-f &quot;interface/stlink.cfg&quot;" tools.stlinkv2.server.initCmd="-c &quot;init; reset halt&quot;" vs-cmd.Debug.AttachtoProcess.tools.stlinkv2.server.initCmd="-c &quot;init&quot;" tools.stlinkv2.upload.scriptPath="-s &quot;{upload.path}/scripts/&quot;" tools.stlinkv2.upload.boardCmd="-f &quot;interface/stlink.cfg&quot;" tools.stlinkv2.upload.cmd="bin/openocd.exe" tools.stlinkv2.upload.cmd.windows="bin/openocd.exe" tools.stlinkv2.upload.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.stlinkv2.upload.address="localhost:3333" tools.stlinkv2.upload.params.verbose="-d2" tools.stlinkv2.upload.params.quiet="-d0" tools.stlinkv2.upload.elf.message="****[vMicro]**** Uploading ELF :" tools.stlinkv2.upload.pattern="&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}" tools.stlinkv2.upload.extra_params="" tools.stlinkv2.upload.protocol="" tools.stlinkv2.protocol="" tools.f2232mm.cmd="arm-none-eabi-gdb.exe" tools.f2232mm.path="{runtime.tools.arm-none-eabi-gcc.path}/bin" tools.f2232mm.pattern="&quot;{path}/{cmd}&quot; {args}" tools.f2232mm.server.tool="vmopenocd" tools.f2232mm.server.boardCmd="-f &quot;interface/ftdi/minimodule.cfg&quot;" tools.f2232mm.server.initCmd="-c &quot;init; reset halt&quot;" vs-cmd.Debug.AttachtoProcess.tools.f2232mm.server.initCmd="-c &quot;init&quot;" tools.f2232mm.upload.scriptPath="-s &quot;{upload.path}/scripts/&quot;" tools.f2232mm.upload.boardCmd="-f &quot;interface/ftdi/minimodule.cfg&quot;" tools.f2232mm.upload.cmd="bin/openocd.exe" tools.f2232mm.upload.cmd.windows="bin/openocd.exe" tools.f2232mm.upload.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.f2232mm.upload.address="localhost:3333" tools.f2232mm.upload.params.verbose="-d2" tools.f2232mm.upload.params.quiet="-d0" tools.f2232mm.upload.elf.message="****[vMicro]**** Uploading ELF :" tools.f2232mm.upload.pattern="&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}" tools.f2232mm.upload.extra_params="" tools.f2232mm.upload.protocol="" tools.f2232mm.protocol="" tools.f2232h.server.boardCmd="-f &quot;interface/ftdi/minimodule-lowcost.cfg&quot;" tools.f2232h.cmd="arm-none-eabi-gdb.exe" tools.f2232h.path="{runtime.tools.arm-none-eabi-gcc.path}/bin" tools.f2232h.pattern="&quot;{path}/{cmd}&quot;" tools.f2232h.server.tool="vmopenocd" tools.f2232h.server.initCmd="-c &quot;init; reset halt&quot;" vs-cmd.Debug.AttachtoProcess.tools.f2232h.server.initCmd="-c &quot;init&quot;" tools.f2232h.upload.scriptPath="-s &quot;{upload.path}/scripts/&quot;" tools.f2232h.upload.boardCmd="-f &quot;interface/ftdi/minimodule-lowcost.cfg&quot;" tools.f2232h.upload.cmd="bin/openocd.exe" tools.f2232h.upload.cmd.windows="bin/openocd.exe" tools.f2232h.upload.path="{runtime.tools.openocd-0.10.0.20200213.path}" tools.f2232h.upload.address="localhost:3333" tools.f2232h.upload.params.verbose="-d2" tools.f2232h.upload.params.quiet="-d0" tools.f2232h.upload.elf.message="****[vMicro]**** Uploading ELF :" tools.f2232h.upload.pattern="&quot;{upload.path}/{upload.cmd}&quot; {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c &quot;echo -n {{upload.elf.message}}&quot; {upload.programCmd}" tools.f2232h.upload.extra_params="" tools.f2232h.upload.protocol="" tools.f2232h.protocol="" vm.platform.root.path="c:\program files (x86)\microsoft visual studio\2019\professional\common7\ide\extensions\0jpe4kch.yzv\Micro Platforms\arduino16x" avrisp.name="AVR ISP" avrisp.communication="serial" avrisp.protocol="stk500v1" avrisp.program.protocol="stk500v1" avrisp.program.tool="avrdude" avrisp.program.extra_params="-P{serial.port}" avrispmkii.name="AVRISP mkII" avrispmkii.communication="usb" avrispmkii.protocol="stk500v2" avrispmkii.program.protocol="stk500v2" avrispmkii.program.tool="avrdude" avrispmkii.program.extra_params="-Pusb" usbtinyisp.name="USBtinyISP" usbtinyisp.protocol="usbtiny" usbtinyisp.program.tool="avrdude" usbtinyisp.program.extra_params="" arduinoisp.name="ArduinoISP" arduinoisp.protocol="arduinoisp" arduinoisp.program.tool="avrdude" arduinoisp.program.extra_params="" arduinoisporg.name="ArduinoISP.org" arduinoisporg.protocol="arduinoisporg" arduinoisporg.program.tool="avrdude" arduinoisporg.program.extra_params="" usbasp.name="USBasp" usbasp.communication="usb" usbasp.protocol="usbasp" usbasp.program.protocol="usbasp" usbasp.program.tool="avrdude" usbasp.program.extra_params="-Pusb" parallel.name="Parallel Programmer" parallel.protocol="dapa" parallel.force="true" parallel.program.tool="avrdude" parallel.program.extra_params="-F" arduinoasisp.name="Arduino as ISP" arduinoasisp.communication="serial" arduinoasisp.protocol="stk500v1" arduinoasisp.speed="19200" arduinoasisp.program.protocol="stk500v1" arduinoasisp.program.speed="19200" arduinoasisp.program.tool="avrdude" arduinoasisp.program.extra_params="-P{serial.port} -b{program.speed}" arduinoasispatmega32u4.name="Arduino as ISP (ATmega32U4)" arduinoasispatmega32u4.communication="serial" arduinoasispatmega32u4.protocol="arduino" arduinoasispatmega32u4.speed="19200" arduinoasispatmega32u4.program.protocol="arduino" arduinoasispatmega32u4.program.speed="19200" arduinoasispatmega32u4.program.tool="avrdude" arduinoasispatmega32u4.program.extra_params="-P{serial.port} -b{program.speed}" usbGemma.name="Arduino Gemma" usbGemma.protocol="arduinogemma" usbGemma.program.tool="avrdude" usbGemma.program.extra_params="" usbGemma.config.path="{runtime.platform.path}/bootloaders/gemma/avrdude.conf" buspirate.name="BusPirate as ISP" buspirate.communication="serial" buspirate.protocol="buspirate" buspirate.program.protocol="buspirate" buspirate.program.tool="avrdude" buspirate.program.extra_params="-P{serial.port}" stk500.name="Atmel STK500 development board" stk500.communication="serial" stk500.protocol="stk500" stk500.program.protocol="stk500" stk500.program.tool="avrdude" stk500.program.extra_params="-P{serial.port}" jtag3isp.name="Atmel JTAGICE3 (ISP mode)" jtag3isp.communication="usb" jtag3isp.protocol="jtag3isp" jtag3isp.program.protocol="jtag3isp" jtag3isp.program.tool="avrdude" jtag3isp.program.extra_params="" jtag3.name="Atmel JTAGICE3 (JTAG mode)" jtag3.communication="usb" jtag3.protocol="jtag3" jtag3.program.protocol="jtag3" jtag3.program.tool="avrdude" jtag3.program.extra_params="-B0.1" atmel_ice.name="Atmel-ICE (AVR)" atmel_ice.communication="usb" atmel_ice.protocol="atmelice_isp" atmel_ice.program.protocol="atmelice_isp" atmel_ice.program.tool="avrdude" atmel_ice.program.extra_params="-Pusb" runtime.tools.avr-gcc.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino7.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.tools-avr.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude-6.3.0-arduino17.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.arduinoOTA.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.arduinoOTA-1.3.0.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.vm.boardinfo.id="yun" runtime.vm.boardinfo.name="yun" runtime.vm.boardinfo.desc="Arduino Yún" runtime.vm.boardinfo.src_location="C:\Program Files (x86)\Arduino\hardware\arduino\avr" ide.hint="Use installed IDE. Provides built-in hardware, reference/help and libraries." ide.location.key="Arduino16x" ide.location.ide.winreg="Arduino 1.6.x Application" ide.location.sketchbook.winreg="Arduino 1.6.x Sketchbook" ide.location.sketchbook.preferences="sketchbook.path" ide.default.revision_name="1.8.13" ide.default.version="10800" ide.default.package="arduino" ide.default.platform="avr" ide.multiplatform="true" ide.includes="Arduino.h" ide.exe_name="arduino" ide.recipe.preproc.defines.flags="-w -x c++ -E -dM" ide.platformswithoutpackage="false" ide.includes.fallback="wprogram.h" ide.extension="ino" ide.extension.fallback="pde" ide.versionGTEQ="160" ide.exe="arduino.exe" ide.builder.exe="arduinobuilder.exe" ide.builder.name="Arduino Builder" ide.hosts="atmel" ide.url="https://www.visualmicro.com/page/Download-Arduino-Or-Other-Supporting-IDEs.aspx" ide.help.reference.path="reference" ide.help.reference.path2="reference\www.arduino.cc\en\Reference" ide.help.reference.serial="reference\www.arduino.cc\en\Serial" ide.location.preferences.portable="{runtime.ide.path}\portable" ide.location.preferences.arduinoData="{runtime.sketchbook.path}\ArduinoData" ide.location.preferences="%VM_APPDATA_LOCAL%\arduino15\preferences.txt" ide.location.preferences_fallback="%VM_APPDATA_ROAMING%\arduino15\preferences.txt" ide.location.contributions="%VM_APPDATA_LOCAL%\arduino15" ide.location.contributions_fallback="%VM_APPDATA_ROAMING%\arduino15" ide.contributions.boards.allow="true" ide.contributions.boards.ignore_unless_rewrite_found="true" ide.contributions.libraries.allow="true" ide.contributions.boards.support.urls.wiki="https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls" ide.create_platforms_from_boardsTXT.teensy="build.core" vm.debug="true" software="ARDUINO" ssh.user.name="root" ssh.user.default.password="arduino" ssh.host.wwwfiles.path="/www/sd" build.working_directory="{runtime.ide.path}\java\bin" runtime.tools.vm_web_debugger.path="{vm.platform.root.path}/../../Micro Debuggers/WebDebugger" recipe.hooks.vmdeploy.vm_web_debugger_postupload.1.pattern="&quot;{runtime.tools.vm_web_debugger.path}/DeployMicroWebserver.exe&quot; &quot;{sketch_path}&quot; &quot;{serial.port}&quot; &quot;{runtime.hardware.path}\..&quot;" recipe.hooks.vmlaunch.vm_web_debugger_preopen.1.pattern="notepad.exe &quot;{sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat&quot;" recipe.hooks.vmlaunch.vm_web_debugger_preopen.2.pattern="{sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat" ide.debug_menu.debugger_type="Debug" ide.debug_menu.debugger_type.none="Off" ide.debug_menu.none.debug.tool="no_debug" ide.debug_menu.debugger_type.universal="Serial" ide.debug_menu.universal.debug.tool="auto" ide.debug_menu.debugger_type.hwdebugger="Hardware" ide.debug_menu.hwdebugger="Debugger" ide.debug_menu.hwdebugger.custom_debugger="Manual/Custom" ide.debug_menu.hwdebugger.custom_debugger.debug.tool="dbg_external" ide.meta_custom_debugger.sentence="Provides a build that includes debug defines and will launch a custom debugger if one is provided." ide.meta_custom_debugger.paragraph="This is option is for advanced use. It is recommended that a pre-configured debugger be selected when available in this list. Usage: Optionally add a customer debugger to the project. A 'debugger_launch.json' file shares the same command syntax that is used by the VsCode debugger. Custom debuggers can be targeted at a board and/or variant and/or configuration name. IE: [variant].[configuration_name][.]debugger_launch.json" ide.meta_custom_debugger.reference.usage.url="https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md#customlaunchsetupcommands" ide.meta_custom_debugger.reference.connect.url="https://docs.microsoft.com/en-us/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2019" ide.debug_menu.vm_disable_optimization="Disable Optimization" ide.debug_menu.vm_disable_optimization.vm_disable_opt_default="Default Optimization" ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj="No Project  Optimization" ide.debug_menu.vm_disable_opt_proj.vm_disable_opt_project="{ide.compiler_flags_no_opt}" ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj_libs="No Project + Libraries Optimization" ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_project="{ide.compiler_flags_no_opt}" ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_libraries="{ide.compiler_flags_no_opt}" ide.debug_menu.vm_disable_optimization.vm_disable_opt_all="No Optimization" ide.meta_vm_disable_opt_all.sentence="Disable compiler optimization for all sources:- Project, Library and Platform." ide.meta_vm_disable_opt_all.comment="After switching between 'No Optimization' and other optimization values, please click &quot;Solution Clean&quot; or switch off (or cycle) 'vMicro&gt;Compiler&gt;Shared Cache For Cores'. NOTE: Changing optimization settings can cause build errors or result in overly large programs." ide.debug_menu.vm_disable_opt_all.vm_disable_opt_project="{ide.compiler_flags_no_opt}" ide.debug_menu.vm_disable_opt_all.vm_disable_opt_libraries="{ide.compiler_flags_no_opt}" ide.debug_menu.vm_disable_opt_all.vm_disable_opt_core="{ide.compiler_flags_no_opt}" ide.appid="arduino16x" location.sketchbook="C:\Users\ron\OneDrive\Documents\Arduino" build.core.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" build.core.parentfolder.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores" build.core.coresparentfolder.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\avr" build.core.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" vm.core.include="arduino.h" vm.boardsource.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr" runtime.platform.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr" vm.platformname.name="avr" build.arch="AVR" debug.tool="auto" vm.runtime.compiler.cached_cores_path="C:\Users\ron\AppData\Local\Temp\VMBCore\arduino16x" vm.runtime.compiler.showwarnings="false" vm.runtime.compiler.showwarnings_core="false" vm.runtime.compiler.showwarnings_library="false" vm.runtime.upload.verbose="true" vm.runtime.upload.verify="true" runtime.vm.ide.platforms.path="c:\program files (x86)\microsoft visual studio\2019\professional\common7\ide\extensions\0jpe4kch.yzv\Micro Platforms" runtime.vm.ide.tools.openocd.path="{runtime.tools.openocd-0.9.0.path}" runtime.vm.openocd.path="{runtime.tools.openocd-0.9.0.path}" vm.runtime.build.intermediate_output_path="C:\Users\ron\source\repos\EquipSrc\Debug\" vm.runtime.build.final_output_path="C:\cstat\Debug\" compiler.always_include_sketchfolder="true" compiler.always_include_sharedprojectfolders="true" vm.runtime.compiler.auto_discover_includes="true" vm.runtime.compiler.auto_discover_includes_shallow="true" vm.runtime.compiler.allow_library_debugging="false" vm.sketch_ino_cpp_name="EquipSrc.cpp" serial.port.file="COM3" serial.port="COM3" serial.port.num="3" port.caption="COM3   - Arduino Yun" Caption="Arduino Yun (COM3)" ClassGuid="{4d36e978-e325-11ce-bfc1-08002be10318}" CompatibleID.value0="USB\Class_02" ConfigManagerErrorCode="0" ConfigManagerUserConfig="False" CreationClassName="Win32_PnPEntity" Description="Arduino Yun" DeviceID="USB\VID_2341&amp;PID_8041&amp;MI_00\6&amp;225EBECF&amp;0&amp;0000" HardwareID.value0="USB\VID_2341&amp;PID_8041&amp;MI_00" Manufacturer="Arduino LLC (www.arduino.cc)" Name="Arduino Yun (COM3)" PNPClass="Ports" PNPDeviceID="USB\VID_2341&amp;PID_8041&amp;MI_00\6&amp;225EBECF&amp;0&amp;0000" Present="True" Service="usbser" Status="OK" SystemCreationClassName="Win32_ComputerSystem" SystemName="DESKTOP-SB3B88M" vid="0x2341" pid="0x8041" vidpid="23418041" vid_pid="0x2341_0x8041" iserial="6&amp;225EBECF&amp;0&amp;0000" extra.time.local="1609024563" extra.time.utc="1609042563" extra.time.dst="-18000" extra.time.zone="18000" serial.port.caption="COM3   - Arduino Yun" serial.Caption="Arduino Yun (COM3)" serial.ClassGuid="{4d36e978-e325-11ce-bfc1-08002be10318}" serial.CompatibleID.value0="USB\Class_02" serial.ConfigManagerErrorCode="0" serial.ConfigManagerUserConfig="False" serial.CreationClassName="Win32_PnPEntity" serial.Description="Arduino Yun" serial.DeviceID="USB\VID_2341&amp;PID_8041&amp;MI_00\6&amp;225EBECF&amp;0&amp;0000" serial.HardwareID.value0="USB\VID_2341&amp;PID_8041&amp;MI_00" serial.Manufacturer="Arduino LLC (www.arduino.cc)" serial.Name="Arduino Yun (COM3)" serial.PNPClass="Ports" serial.PNPDeviceID="USB\VID_2341&amp;PID_8041&amp;MI_00\6&amp;225EBECF&amp;0&amp;0000" serial.Present="True" serial.Service="usbser" serial.Status="OK" serial.SystemCreationClassName="Win32_ComputerSystem" serial.SystemName="DESKTOP-SB3B88M" serial.vid="0x2341" serial.pid="0x8041" serial.vidpid="23418041" serial.vid_pid="0x2341_0x8041" serial.iserial="6&amp;225EBECF&amp;0&amp;0000" serial.port.iserial="6&amp;225EBECF&amp;0&amp;0000" build.project_name="EquipSrc.ino" build.project_path="C:\Users\ron\source\repos\EquipSrc" sketch_path="C:\Users\ron\source\repos\EquipSrc" ProjectDir="C:\Users\ron\source\repos\EquipSrc\" build.path="C:\Users\ron\AppData\Local\Temp\VMBuilds\EquipSrc\yun\Debug" vm.runtime.compile.skip_library_file_if_exists_in_project="false" vm.runtime.compiler.auto_discover_includes_cache="true" build.vm.build.vmdebug="1" build.vm.build.isgdb="0" build.vm.build.optimised="1" vm.last.buildpath="C:\Users\ron\AppData\Local\Temp\VMBuilds\EquipSrc\yun\Debug" build.architecture="avr" vmresolved.compiler.path="C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\" vmresolved.tools.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" build.variant.vmresolved.name="yun" build.variant.vmresolved.full_path="C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\yun" />
+    </Platform>
+    <Debug DebugEnabled="1" EnableBreak="1" InBreakLiveView="1" PerfStats="0" IsGdb="0" RuntimeWriterMissingSetup="0" RuntimeWriterMissingLoop="0" RemotePortSpeedWrittenToDebugSource="9600" RuntimeWriterFoundSetupStart="1" RuntimeWriterFoundLoopStart="1" />
+    <VCCodeModel>
+      <VCCodeMacros />
+    </VCCodeModel>
+    <BreakPoints>
+      <BreakPoint Index="1" Name="CStatController.cs, line 39 character 12" Id="13ad1a21-16e2-4560-9977-637341db6c83" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\cstatcontroller.cs" FileLine="39" FileColumn="12" FunctionName="CStat.Controllers.CStatController.Get(string id)" FunctionLineOffset="7" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='13ad1a21-16e2-4560-9977-637341db6c83'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>32	        // GET: api/CStat/5
+33	        [HttpGet("{id}")]
+34	        [Obsolete]
+35	        //        public async Task&lt;ActionResult&lt;Person&gt;&gt; GetPerson(int id)
+36	        public string Get(string id) //********************************************************
+37	        {
+38	        
+--&gt;39	           if (id == null)
+40	               return "Bad Get id";
+41	
+42	           id = id.Replace("@@", "*");
+43	
+44	           String MatchingChurchesStr = "Matching_Churches:";
+45	           int MatchingChurchesIndex = id.IndexOf(MatchingChurchesStr);
+46	           if (MatchingChurchesIndex &gt;= 0)
+47	           {
+48	               id = id.Trim();
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="2" Name="CStatController.cs, line 29 character 13" Id="7bc9e2b2-8690-4cbb-a4b0-8f5686aa8955" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\cstatcontroller.cs" FileLine="29" FileColumn="13" FunctionName="CStat.Controllers.CStatController.GetPerson()" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='7bc9e2b2-8690-4cbb-a4b0-8f5686aa8955'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>22	            entities = context;
+23	        }
+24	
+25	        // GET: api/CStat
+26	        [HttpGet]
+27	        public async Task&lt;ActionResult&lt;IEnumerable&lt;Person&gt;&gt;&gt; GetPerson()
+28	        {
+--&gt;29	            return await entities.Person.ToListAsync();
+30	        }
+31	
+32	        // GET: api/CStat/5
+33	        [HttpGet("{id}")]
+34	        [Obsolete]
+35	        //        public async Task&lt;ActionResult&lt;Person&gt;&gt; GetPerson(int id)
+36	        public string Get(string id) //********************************************************
+37	        {
+38	        
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="3" Name="ValuesController.cs, line 119 character 13" Id="61034666-9fc4-4779-9897-c1cd5d57a18a" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\common\ccaservice\valuescontroller.cs" FileLine="119" FileColumn="13" FunctionName="CStat.ValuesController.Get(string id)" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='61034666-9fc4-4779-9897-c1cd5d57a18a'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>112	        {
+113	            return new string[] { "value1", "value2" };
+114	        }
+115	
+116	        // GET api/values/5
+117	        public string Get(string id) //********************************************************
+118	        {
+--&gt;119	            if (id == null)
+120	                return "Bad Get id";
+121	
+122	            id = id.Replace("@@", "*");
+123	
+124	            String MatchingChurchesStr = "Matching_Churches:";
+125	            int MatchingChurchesIndex = id.IndexOf(MatchingChurchesStr);
+126	            if (MatchingChurchesIndex &gt;= 0)
+127	            {
+128	                id = id.Trim();
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="4" Name="ValuesController.cs, line 107 character 13" Id="d62090e4-f205-4576-8370-76ab182ed890" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\common\ccaservice\valuescontroller.cs" FileLine="107" FileColumn="13" FunctionName="CStat.ValuesController.ValuesController(CStatContext csc)" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='d62090e4-f205-4576-8370-76ab182ed890'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>100	    
+101	    public class ValuesController
+102	    {
+103	        private CStatContext entities;
+104	
+105	        public ValuesController(CStatContext csc)
+106	        {
+--&gt;107	            entities = csc;
+108	        }
+109	
+110	        // GET api/values
+111	        public IEnumerable&lt;string&gt; Get()
+112	        {
+113	            return new string[] { "value1", "value2" };
+114	        }
+115	
+116	        // GET api/values/5
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="5" Name="CCAController.cs, line 42 character 13" Id="2cabc2ab-e5b7-4006-85b3-1bd22f34195c" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\ccacontroller.cs" FileLine="42" FileColumn="13" FunctionName="CStat.Controllers.CCAController.Put(Raw raw)" FunctionLineOffset="6" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='2cabc2ab-e5b7-4006-85b3-1bd22f34195c'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>35	
+36	        // PUT api/cca/5
+37	        [HttpPut]
+38	        [Obsolete]
+39	        public String Put(Raw raw)
+40	        {
+41	            bool bAllowNoAddress;
+--&gt;42	            if ((bAllowNoAddress = (raw.type == "Person2")) &amp;&amp; (raw.data != null))
+43	            {
+44	                var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+45	                var data = JsonConvert.DeserializeObject&lt;Attendance.PFullInfo&gt;(raw.data, settings);
+46	                raw.type = "Person";
+47	                raw.data = data.ToString();
+48	            }
+49	
+50	            if (raw.type == "PersonANA")
+51	            {
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="6" Name="ValuesController.cs, line 135 character 13" Id="d62f1327-ebce-42d8-b883-b2c5b3739aa0" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\common\ccaservice\valuescontroller.cs" FileLine="135" FileColumn="13" FunctionName="CStat.ValuesController.Get(string id)" FunctionLineOffset="19" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='d62f1327-ebce-42d8-b883-b2c5b3739aa0'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>128	                id = id.Trim();
+129	                String ChurchHint = id.Substring(MatchingChurchesIndex + MatchingChurchesStr.Length).Trim();
+130	                ChurchMgr cmgr = new ChurchMgr(entities);
+131	                return cmgr.FindChurches(ChurchHint);
+132	            }
+133	
+134	            String MatchingEventsStr = "Matching_Events:";
+--&gt;135	            int MatchingEventsIndex = id.IndexOf(MatchingEventsStr);
+136	            if (MatchingEventsIndex &gt;= 0)
+137	            {
+138	                id = id.Trim();
+139	                String EventHint = id.Substring(MatchingEventsIndex + MatchingEventsStr.Length).Trim();
+140	                EventMgr emgr = new EventMgr(entities);
+141	                return emgr.FindEvents(EventHint);
+142	            }
+143	
+144	            String DeleteEventStr = "Delete_Event:";
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="7" Name="CStatController.cs, line 176 character 13" Id="ff86b607-7d71-4413-a263-11133fd6eebe" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\cstatcontroller.cs" FileLine="176" FileColumn="13" FunctionName="CStat.Controllers.CStatController.PutPerson(int id, Person person)" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='ff86b607-7d71-4413-a263-11133fd6eebe'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>169	
+170	        // PUT: api/CStat/5
+171	        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+172	        // more details see https://aka.ms/RazorPagesCRUD.
+173	        [HttpPut("{id}")]
+174	        public async Task&lt;IActionResult&gt; PutPerson(int id, Person person)
+175	        {
+--&gt;176	            if (id != person.Id)
+177	            {
+178	                return BadRequest();
+179	            }
+180	
+181	            entities.Entry(person).State = EntityState.Modified;
+182	
+183	            try
+184	            {
+185	                await entities.SaveChangesAsync();
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="8" Name="CCAController.cs, line 116 character 17" Id="5fd207f1-08ca-41ef-af8f-db25a9be15b1" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\ccacontroller.cs" FileLine="116" FileColumn="17" FunctionName="CStat.Controllers.CCAController.Put(Raw raw)" FunctionLineOffset="80" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='5fd207f1-08ca-41ef-af8f-db25a9be15b1'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>109	            {
+110	                //var settings = new JsonSerializerSettings
+111	                //{
+112	                //    TypeNameHandling = TypeNameHandling.Objects,
+113	                //    TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Simple
+114	                //};
+115	
+--&gt;116	                var cv = JsonConvert.DeserializeObject&lt;Church.ChurchData&gt;(raw.data);
+117	                Church.ChurchData cd = (Church.ChurchData)cv;
+118	                ChurchMgr cmgr = new ChurchMgr(entities);
+119	                MgrStatus ms = cmgr.Update(cd);
+120	                return ms.ToString();
+121	            }
+122	            else if (raw.type == "Attendance")
+123	            {
+124	                var settings = new JsonSerializerSettings
+125	                {
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="9" Name="Find.cshtml.cs, line 78 character 13" Id="ced770a1-fd55-419e-b03b-6fed6bd92007" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\people\find.cshtml.cs" FileLine="78" FileColumn="13" FunctionName="CStat.FindModel.OnGetFindPeople()" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='ced770a1-fd55-419e-b03b-6fed6bd92007'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>71	            await _context.SaveChangesAsync();
+72	
+73	            return RedirectToPage("./Index");
+74	        }
+75	
+76	        public JsonResult OnGetFindPeople()
+77	        {
+--&gt;78	            var rawQS = Uri.UnescapeDataString(Request.QueryString.ToString());
+79	            var idx = rawQS.IndexOf('{');
+80	            if (idx == -1)
+81	                return new JsonResult("ERROR~:No Parameters");
+82	            var jsonQS = rawQS.Substring(idx);
+83	
+84	            return new JsonResult(Person.FindPeople(_context, "Find People:" + jsonQS));
+85	        }
+86	    }
+87	}
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="10" Name="Model.cs, line 370 character 13" Id="7016a9cb-3ac9-4dbd-9924-7eb9585d52c8" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\common\model.cs" FileLine="370" FileColumn="13" FunctionName="CStat.Models.Person.FindPeople(CStatContext entities, string id)" FunctionLineOffset="166" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='7016a9cb-3ac9-4dbd-9924-7eb9585d52c8'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>363	                {
+364	                    props.Add(new KeyValuePair&lt;string, string&gt;(nvp[0], nvp[1]));
+365	                }
+366	            }
+367	
+368	            // SQL Based Query
+369	
+--&gt;370	            String sel = "Select * from Person FULL OUTER JOIN Address ON (Person.Address_id = Address.id)";
+371	            int orgSelLen = sel.Length;
+372	            bool bFiltered = false;
+373	
+374	            PersonMgr pmgr = new PersonMgr(entities);
+375	            Person fp;
+376	            Address fa;
+377	            if (pmgr.Update(ref props, true, true, out fp, out fa) != MgrStatus.Add_Update_Succeeded)
+378	                return "Invalid Search Criteria";
+379	
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="11" Name="Create.cshtml.cs, line 465 character 21" Id="95683871-cada-40c1-9770-52a842efc1b6" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\tasks\create.cshtml.cs" FileLine="465" FileColumn="21" FunctionName="CStat.Pages.Tasks.CreateModel.OnPostSave()" FunctionLineOffset="66" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='95683871-cada-40c1-9770-52a842efc1b6'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>458	                    String tcostStr = this.Request.Form.FirstOrDefault(kv =&gt; kv.Key == "taskTotalCost").Value;
+459	                    if (tcostStr.Trim().Length &gt; 0)
+460	                        task.TotalCost = decimal.Parse(tcostStr);
+461	                    else
+462	                        task.TotalCost = 0;
+463	
+464	                    IsTemplate = (task.Type &amp; (int)CTask.eTaskType.Template) != 0;
+--&gt;465	                    if (IsTemplate)
+466	                    {
+467	                        fStr = "Template Task";
+468	
+469	                        // Make sure to initialize ABOVE and also get these HERE only for a Template Task.
+470	                        int dueType = Int32.Parse(this.Request.Form.FirstOrDefault(kv =&gt; kv.Key == "taskCreateDue").Value);
+471	                        if (dueType != 0)
+472	                        {
+473	                            // Get Template Type
+474	
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="12" Name="Create.cshtml.cs, line 618 character 25" Id="7b05e348-dbc2-43a3-be8c-74da0b7589bf" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\tasks\create.cshtml.cs" FileLine="618" FileColumn="25" FunctionName="CStat.Pages.Tasks.CreateModel.OnPostSave()" FunctionLineOffset="219" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='7b05e348-dbc2-43a3-be8c-74da0b7589bf'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>611	                    fStr = "DB Update";
+612	                    _context.Attach(task).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+613	                    _context.SaveChanges();
+614	
+615	                    if (IsTemplate)
+616	                    {
+617	                        // Generate possibly new Tasks based on template add/changes
+--&gt;618	                        AutoGen ag = new AutoGen(_context);
+619	                        ag.GenTasks(task.Id);
+620	                    }
+621	
+622	                }
+623	                catch(Exception e)
+624	                {
+625	                    return this.Content("Fail: " + fStr + " e.msg=" + e.Message); // Send back results
+626	                }
+627	
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="13" Name="Create.cshtml.cs, line 125 character 13" Id="be596eb4-5f58-473d-ae55-951335aa1360" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\tasks\create.cshtml.cs" FileLine="125" FileColumn="13" FunctionName="CStat.Pages.Tasks.TaskData.ReadTaskData(IWebHostEnvironment hstEnv, int taskId, int parentTaskId)" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='be596eb4-5f58-473d-ae55-951335aa1360'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>118	            pics = new List&lt;Pic&gt;();
+119	            bom = new List&lt;BOMLine&gt;();
+120	            comments = "";
+121	            FixedDueDate = false;
+122	        }
+123	        public static TaskData ReadTaskData(IWebHostEnvironment hstEnv, int taskId, int parentTaskId)
+124	        {
+--&gt;125	            TaskData taskData = null;
+126	            string folderName = @"Tasks";
+127	            string webRootPath = hstEnv.WebRootPath;
+128	            string newPath = Path.Combine(webRootPath, folderName);
+129	            if (!Directory.Exists(newPath))
+130	            {
+131	                Directory.CreateDirectory(newPath);
+132	            }
+133	
+134	            for (int i = 0, tid = taskId; i &lt; 2; ++i, tid=parentTaskId)
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="14" Name="Create.cshtml.cs, line 275 character 17" Id="3d7ef260-e755-49f2-a051-477dd03141d5" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\tasks\create.cshtml.cs" FileLine="275" FileColumn="17" FunctionName="CStat.Pages.Tasks.CreateModel.OnGet(int? id)" FunctionLineOffset="16" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='3d7ef260-e755-49f2-a051-477dd03141d5'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>268	                InitializeTask(tid);
+269	                _context.Task.Add(task);
+270	                res = _context.SaveChanges();
+271	            }
+272	            else
+273	            {
+274	                task = _context.Task.FirstOrDefault(m =&gt; m.Id == tid);
+--&gt;275	                if ((task != null) &amp;&amp; (tid == task.Id))
+276	                {
+277	                    IsTemplate = (task.Type &amp; (int)CTask.eTaskType.Template) != 0;
+278	                    taskData = TaskData.ReadTaskData(hostEnv, tid, task.ParentTaskId.HasValue ? task.ParentTaskId.Value : -1);
+279	                    if (task.DueDate == null)
+280	                        task.DueDate = task.EstimatedDoneDate; // temporary for editing purpose
+281	                    if ((task.Type &amp; (int)CTask.eTaskType.Template) != 0)
+282	                    {
+283	                        // Initialize Template Type members
+284	                        CTask.eTaskType CreateTaskDue;
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="15" Name="Create.cshtml.cs, line 262 character 13" Id="9990824e-9567-4df2-a79b-4c757503831f" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\tasks\create.cshtml.cs" FileLine="262" FileColumn="13" FunctionName="CStat.Pages.Tasks.CreateModel.OnGet(int? id)" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='9990824e-9567-4df2-a79b-4c757503831f'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>255	            task.SetTaskStatus(CTask.eTaskStatus.Not_Started, CTask.eTaskStatus.Unknown, 0);
+256	            task.Priority = (int)CTask.ePriority.High;
+257	            task.RequiredSkills = "";
+258	        }
+259	
+260	        public IActionResult OnGet(int? id)
+261	        {
+--&gt;262	            int tid = !id.HasValue ? tid = 0 : id.Value;
+263	
+264	            int res = 0;
+265	            if (tid &lt;= 0)
+266	            {
+267	                // Create new task
+268	                InitializeTask(tid);
+269	                _context.Task.Add(task);
+270	                res = _context.SaveChanges();
+271	            }
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="16" Name="Index.cshtml.cs, line 72 character 13" Id="92be07ad-a71f-4e0d-935a-880231014dc7" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\tasks\index.cshtml.cs" FileLine="72" FileColumn="13" FunctionName="CStat.Pages.Tasks.IndexModel.OnPostAutoGen()" FunctionLineOffset="6" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='92be07ad-a71f-4e0d-935a-880231014dc7'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>65	            }
+66	        }
+67	        public ActionResult OnPostAutoGen()
+68	        {
+69	            // Generate possibly new Tasks based on template add/changes
+70	            AutoGen ag = new AutoGen(_context);
+71	            ag.GenTasks();
+--&gt;72	            return this.Content("Success");
+73	        }
+74	    }
+75	
+76	}
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="17" Name="Create.cshtml.cs, line 235 character 13" Id="20d9406f-e98f-4bb6-8ab4-316683058b91" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\tasks\create.cshtml.cs" FileLine="235" FileColumn="13" FunctionName="CStat.Pages.Tasks.CreateModel.InitializeTask(int tid=0)" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='20d9406f-e98f-4bb6-8ab4-316683058b91'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>228	        //    tData.pics.Add(pic);
+229	        //    return tData;
+230	        //}
+231	
+232	        private void InitializeTask(int tid=0)
+233	        {
+234	            task = new CTask();
+--&gt;235	            taskData = new TaskData();
+236	            if (tid == -1)
+237	            {
+238	                // Initialize Template
+239	                task.Type |= (int)CTask.eTaskType.Template;
+240	                IsTemplate = true;
+241	                tid = 0;
+242	            }
+243	            else
+244	            {
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="18" Name="Index.cshtml.cs, line 95 character 13" Id="43fbc6a6-8144-46f0-89df-6b8e4d3ed055" Enabled="0" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\pages\inventory\index.cshtml.cs" FileLine="95" FileColumn="13" FunctionName="CStat.IndexInvModel.IndexInvModel(CStat.Models.CStatContext context, IConfiguration configuration, IHttpContextAccessor httpCA)" FunctionLineOffset="6" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='43fbc6a6-8144-46f0-89df-6b8e4d3ed055'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>88	        }
+89	
+90	        public IndexInvModel(CStat.Models.CStatContext context, IConfiguration configuration, IHttpContextAccessor httpCA)
+91	        {
+92	            _context = context;
+93	            _configuration = configuration;
+94	            _httpCA = httpCA;
+--&gt;95	            _csSettings = new CSSettings(_configuration);
+96	            var user = _csSettings.GetUser(_httpCA.HttpContext.User.Identity.Name);
+97	        }
+98	
+99	        public IList&lt;InventoryItem&gt; InventoryItems { get; set; }
+100	
+101	        public async Task OnGetAsync()
+102	        {
+103	            InventoryItems = await _context.InventoryItem
+104	                .Include(i =&gt; i.Inventory)
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="19" Name="Worker.cs, line 25 character 17" Id="49b46976-f09d-47d7-a381-437ae2aec5fb" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\common\worker.cs" FileLine="25" FileColumn="17" FunctionName="CStat.Common.Worker.DoWork(CancellationToken cancelToken)" FunctionLineOffset="6" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='49b46976-f09d-47d7-a381-437ae2aec5fb'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>18	        }
+19	
+20	        public async System.Threading.Tasks.Task DoWork(CancellationToken cancelToken)
+21	        {
+22	            while (!cancelToken.IsCancellationRequested)
+23	            {
+24	                // Check Stock for possibly needed items
+--&gt;25	                OrderedEvents ordEvs = new OrderedEvents(context);
+26	                IList&lt;InventoryItem&gt; InventoryItems = context.InventoryItem.Include(i =&gt; i.Inventory).Include(i =&gt; i.Item).ToList();
+27	                foreach (var invIt in InventoryItems)
+28	                {
+29	                    if (IndexInvModel.MayNeedItem(context, invIt, ordEvs))
+30	                    {
+31	                        // Item likely needs to be ordered. Mark as needed.
+32	                        if (invIt.State == IndexInvModel.STOCKED_STATE)
+33	                        {
+34	                            invIt.State = IndexInvModel.NEEDED_STATE;
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="20" Name="Logout.cshtml.cs, line 33 character 13" Id="84fc6ad4-16d3-4fb1-ba22-218bc742eb40" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\areas\identity\pages\account\logout.cshtml.cs" FileLine="33" FileColumn="13" FunctionName="CStat.Areas.Identity.Pages.Account.LogoutModel.OnPost(string returnUrl = null)" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='84fc6ad4-16d3-4fb1-ba22-218bc742eb40'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>26	        public void OnGet()
+27	        {
+28	        }
+29	
+30	        public async Task&lt;IActionResult&gt; OnPost(string returnUrl = null)
+31	        {
+32	            await _signInManager.SignOutAsync();
+--&gt;33	            _logger.LogInformation("User logged out.");
+34	            if (returnUrl != null)
+35	            {
+36	                return LocalRedirect(returnUrl);
+37	            }
+38	            else
+39	            {
+40	                return RedirectToPage();
+41	            }
+42	        }
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="21" Name="Logout.cshtml.cs, line 28 character 9" Id="1905d136-c83a-466d-9c90-bd14e0152ff7" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\areas\identity\pages\account\logout.cshtml.cs" FileLine="28" FileColumn="9" FunctionName="CStat.Areas.Identity.Pages.Account.LogoutModel.OnGet()" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='1905d136-c83a-466d-9c90-bd14e0152ff7'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>21	        {
+22	            _signInManager = signInManager;
+23	            _logger = logger;
+24	        }
+25	
+26	        public void OnGet()
+27	        {
+--&gt;28	        }
+29	
+30	        public async Task&lt;IActionResult&gt; OnPost(string returnUrl = null)
+31	        {
+32	            await _signInManager.SignOutAsync();
+33	            _logger.LogInformation("User logged out.");
+34	            if (returnUrl != null)
+35	            {
+36	                return LocalRedirect(returnUrl);
+37	            }
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="22" Name="EquipController.cs, line 88 character 9" Id="b726bd79-95d9-4b12-b864-d62440c12e9a" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\equipcontroller.cs" FileLine="88" FileColumn="9" FunctionName="CStat.Controllers.EquipController.Post([FromBody] string value)" FunctionLineOffset="21" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='b726bd79-95d9-4b12-b864-d62440c12e9a'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>81	            
+82	            var response = new HttpResponseMessage(HttpStatusCode.OK)
+83	            {
+84	                Content = new StringContent("Response from CStat PUT", System.Text.Encoding.UTF8, "text/plain"),
+85	                StatusCode = HttpStatusCode.OK
+86	            };
+87	            return response;
+--&gt;88	        }
+89	
+90	        // PUT api/Equip/5
+91	        [HttpPut("{id}")]
+92	        public void Put(int id, [FromBody] string value)
+93	        {
+94	        }
+95	
+96	        // DELETE api/Equip/5
+97	        [HttpDelete("{id}")]
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="23" Name="EquipController.cs, line 35 character 13" Id="48cdaab8-c6e6-45e9-95e7-94554a063fe2" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\equipcontroller.cs" FileLine="35" FileColumn="13" FunctionName="CStat.Controllers.EquipController.Get()" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='48cdaab8-c6e6-45e9-95e7-94554a063fe2'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>28	            hostEnv = hstEnv;
+29	        }
+30	
+31	        // GET: api/Equip
+32	        [HttpGet]
+33	        public IEnumerable&lt;string&gt; Get()
+34	        {
+--&gt;35	            string webRootPath = hostEnv.WebRootPath;
+36	            string newPath = Path.Combine(webRootPath, "tmpDBox");
+37	            if (!Directory.Exists(newPath))
+38	                Directory.CreateDirectory(newPath);
+39	            string fullPath = Path.Combine(newPath, "EquipPost.txt");
+40	            if (System.IO.File.Exists(fullPath))
+41	            {
+42	                FileInfo info = new FileInfo(fullPath);
+43	                return new string[] { "Post Size = " + info.Length.ToString(), "AAA" };
+44	            }
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="24" Name="EquipController.cs, line 52 character 13" Id="e47f2927-065f-4a42-a177-1a293548492c" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\equipcontroller.cs" FileLine="52" FileColumn="13" FunctionName="CStat.Controllers.EquipController.Get(int id)" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='e47f2927-065f-4a42-a177-1a293548492c'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>45	            return new string[] { fullPath, " Not Found." };
+46	        }
+47	
+48	        // GET api/Equip/5
+49	        [HttpGet("{id}")]
+50	        public string Get(int id)
+51	        {
+--&gt;52	            string webRootPath = hostEnv.WebRootPath;
+53	
+54	            String qstr = this.Request.QueryString.Value;
+55	            string newPath = Path.Combine(webRootPath, "tmpDBox");
+56	            if (!Directory.Exists(newPath))
+57	                Directory.CreateDirectory(newPath);
+58	            string fullPath = Path.Combine(newPath, "EquipPost.txt");
+59	            using (StreamWriter sw = new StreamWriter(fullPath, true))
+60	            {
+61	                sw.WriteLine("Posted from Arduino = " + qstr);
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="25" Name="EquipController.cs, line 71 character 13" Id="51729862-a554-4942-9fc5-6703b2148298" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="c:\cstat\controllers\equipcontroller.cs" FileLine="71" FileColumn="13" FunctionName="CStat.Controllers.EquipController.Post([FromBody] string value)" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C#" LocationType="3" Tag="&lt;vmbp Id='51729862-a554-4942-9fc5-6703b2148298'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>64	            return "Posted for ID=" + id + " Params=" + qstr;
+65	        }
+66	
+67	        // POST api/Equip
+68	        [HttpPost]
+69	        public HttpResponseMessage Post([FromBody] string value)
+70	        {
+--&gt;71	            string webRootPath = hostEnv.WebRootPath;
+72	            string newPath = Path.Combine(webRootPath, "tmpDBox");
+73	            if (!Directory.Exists(newPath))
+74	                Directory.CreateDirectory(newPath);
+75	            string fullPath = Path.Combine(newPath, "EquipPost.txt");
+76	            using (StreamWriter sw = new StreamWriter(fullPath, true))
+77	            {
+78	                sw.WriteLine("Value=" + value);
+79	                sw.Close();
+80	            }
+</Source>
+      </BreakPoint>
+    </BreakPoints>
+  </Program>
+</VisualMicro>
