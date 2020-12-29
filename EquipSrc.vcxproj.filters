@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="EquipSrc.ino" />
     <None Include="src\arduino folders read me.txt">
       <Filter>Misc Files</Filter>
     </None>
+    <None Include="EquipSrc.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.EquipSrc.vsarduino.h">
